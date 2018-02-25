@@ -1,0 +1,93 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 43px
+}
+
+a {
+    text-decoration: none;
+}
+
+.connect {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.homepage-hero-module {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.connect h1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    font-family: Lobster;
+    padding: 20px;
+}
+
+.connect form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.connect input {
+    border: none;
+}
+
+.style-co {
+    margin: 7px 0;
+}
+
+.password-co {
+    margin-left: -5px;
+}
+
+.connect button {
+    border: none;
+    height: 30px;
+    width: 50%;
+    margin: 10px auto 0;
+}
+
+.connect button:hover {
+    background-color: #404040;
+    color: white;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.315);
+    height: 50px;
+    width: 25%;
+    margin-top: 25px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 0px #722121;
+}
+
+.error i {
+    margin-right: 10px;
+    color: red;
+}
