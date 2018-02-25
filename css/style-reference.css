@@ -359,8 +359,10 @@ thead #btn a {
 
 .view-detail-content {
     height: 150px;
-    line-height: 22px;
-    margin: 15px 0;
+    line-height: 23px;
+    margin: 10px 0;
+    background-color: #eeeeee80;
+    padding: 10px 0;
 }
 
 .view-detail-content span {
@@ -375,4 +377,10 @@ thead #btn a {
     justify-content: space-around;
     height: 100%;
     padding: 10px;
+}
+
+.client-bcg {
+    width: 60%;
+    border: 1px solid #aaa;
+    padding: 7px;
 }
