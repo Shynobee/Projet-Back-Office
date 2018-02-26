@@ -7,7 +7,6 @@ include('header.php');
 
 <div class="homepage-hero-module">
     <div class="video-container">
-        <div class="filter"></div>
         <video autoplay loop class="fillWidth">
             <source src="../img/Office-Day.mp4" type="video/mp4" />
         </video>
