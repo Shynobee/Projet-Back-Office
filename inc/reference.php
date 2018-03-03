@@ -3,25 +3,10 @@ include('header.php');
 if($_SESSION['newsession'] == NULL) {
     header('Location: login.php');
 }
-if(isset($_POST['searchbar'])){
-$_SESSION['search'] = $_POST['searchbar'];
+if(isset($_POST['searchclient'])){
+$_SESSION['search'] = $_POST['searchclient'];
 }
-switch ($_GET['page']){
-    case 'HOME':
-        break;
-    case 'CLIENT LIST':
-        break;
-    case 'ADD NEW CLIENT':
-        break;
-    case 'EDIT CLIENT':
-        break;
-    case 'VIEW CLIENT':
-        break;
-    default:
-        $_GET['page']='HOME';
-        break;
 
-}
 ?>
 
 
@@ -56,7 +41,12 @@ switch ($_GET['page']){
                     <div class="custom-search">
                         <form action="" method="post">
                             <label for="searchbar"><i class="fa fa-search"></i></label>
-                            <input value="<?= $_SESSION['search'] ?>" type="search" name="searchbar" placeholder="Search"/>
+                            <input value="<?= $_SESSION['search'] ?>" type="search" name="searchclient" placeholder="Search"/>
+                            <label for="client">Client</label>
+                            <input type="checkbox" name="client">
+                            <label for="context">Context</label>
+                            <input type="checkbox" name="context">
+                            <input type="submit" value="Search" name='search'>
                         </form>
                     </div>
                     <div class="custom-logout">

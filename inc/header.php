@@ -1,6 +1,5 @@
 <?php session_start(); 
 require('mysqlconnect.php');
-require 'functions.php';
 $mdb = new db;
 ?>
 <!DOCTYPE html>
