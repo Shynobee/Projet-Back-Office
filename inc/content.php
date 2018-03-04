@@ -19,7 +19,17 @@ switch ($_GET['page']) {
         break;
     case 'CLIENT LIST':
         $listpage = array();
-        for ($i = 0; $i < (count($_SESSION['client'])/14); $i++) { $ar=array_slice($_SESSION['client'], ($i*14), 14); array_push($listpage,$ar);}
+        if(!empty($_POST['searchclient'])){
+        $search = [
+            'client'=>$_POST['searchclient'],
+            'context'=>$_POST['searchclient'],
+            'objectifs'=>$_POST['searchclient'],
+        ];
+        $listpage1 = filter($search,$_SESSION['client'] );}
+        else{
+        $listpage1 = $_SESSION['client'];
+        }
+        for ($i = 0; $i < (count($listpage1)/14); $i++) { $ar=array_slice($listpage1, ($i*14), 14); array_push($listpage,$ar);}
         include 'client-list.php';
         break;
     case 'ADD NEW CLIENT':
