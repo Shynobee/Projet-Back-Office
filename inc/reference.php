@@ -42,15 +42,7 @@ if(!isset($_GET['page'])){
                 <div class="nav-container">
                     <h2><?= $_GET['page'] ?></h2>
                     <div class="custom-search">
-                        <form action="" method="post">
-                            <label for="searchbar"><i class="fa fa-search"></i></label>
-                            <input value="<?= $_SESSION['search'] ?>" type="search" name="searchclient" placeholder="Search"/>
-                            <label for="client">Client</label>
-                            <input type="checkbox" name="client">
-                            <label for="context">Context</label>
-                            <input type="checkbox" name="context">
-                            <input type="submit" value="Search" name='search'>
-                        </form>
+                        <?php include 'searchbar.php' ?>
                     </div>
                     <div class="custom-logout">
                         <form action="logout.php">

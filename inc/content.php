@@ -1,7 +1,6 @@
 <?php
 include('functions.php');
-if (isset($_GET['id'])){
-$_SESSION['detail'][0]['lastview']=$_GET['id'];}
+if (isset($_GET['id'])){$_SESSION['detail'][0]['lastview']=$_GET['id'];}
 $_SESSION['client'] = $mdb->request('SELECT * FROM refs ORDER BY `id` DESC  ', []);
 
 
@@ -22,8 +21,8 @@ switch ($_GET['page']) {
         if(!empty($_POST['searchclient'])){
         $search = [
             'client'=>$_POST['searchclient'],
-            'context'=>$_POST['searchclient'],
-            'objectifs'=>$_POST['searchclient'],
+            //'context'=>$_POST['searchclient'],
+            //'objectifs'=>$_POST['searchclient'],
         ];
         $listpage1 = filter($search,$_SESSION['client'] );}
         else{
