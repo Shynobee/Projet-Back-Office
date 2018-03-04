@@ -9,7 +9,7 @@ if(!empty($id) && !empty($mp)) {
             $req=$mdb->request('UPDATE `users` SET `lastconnection` = :lc WHERE username=:username',['lc'=> date("Y-m-d H:i:s"),'username'=>$id]);
             $_SESSION["newsession"] = $id;
             $_SESSION['detail']=$result;
-            header('Location: reference.php?');
+            header('Location: reference.php?page=HOME');
             die();
         } else {
             $er = 'Identifiant ou Mot de passe incorrect';

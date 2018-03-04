@@ -5,7 +5,7 @@
 <div class="home-top">
     <div class="home-top-box">
        <span> Nb Client</span>
-       <span><?= $client[0]["COUNT(*)"] ?></span>
+       <span><?= $client?></span>
     </div>
     <div class="home-top-box">
         <span>Mes clients</span>

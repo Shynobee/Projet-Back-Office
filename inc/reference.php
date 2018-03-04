@@ -6,7 +6,10 @@ if($_SESSION['newsession'] == NULL) {
 if(isset($_POST['searchclient'])){
 $_SESSION['search'] = $_POST['searchclient'];
 }
-
+if(!isset($_GET['page'])){
+    $_GET['page'] = 'HOME';
+}
+    
 ?>
 
 

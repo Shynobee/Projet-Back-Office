@@ -1,19 +1,4 @@
-<div class="option">
-    <?php if(isset($_GET['filter'])){?>
-    <nav>
-    <a>Filtrer</a>
-    <a href="?page=CLIENT LIST&num=<?=$_GET['num']?>">X</a>
-    </nav>
-    <div class="filter">
-        <?php include 'filter.php'; 
-        ?>
-    </div>
-    <?php } else { ?>
-    <nav>
-    <a href="?page=CLIENT LIST&num=<?=$_GET['num']?>&filter=">Filtrer</a>
-    </nav>
-    <?php } ?>
-</div>
+
 <div class="client-list-container">
 <div class="client-list">
    

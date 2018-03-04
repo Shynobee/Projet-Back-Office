@@ -309,26 +309,6 @@ thead #btn a {
     margin: 5px 0;
 }
 
-.option {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    right: 10px;
-    top: 80px;
-}
-
-.option a {
-    background-color: #fff;
-    padding: 15px;
-}
-
-.filter {
-    width: 260px;
-    min-height: calc(90vh - 150px);
-    background-color: #fff;
-}
-
 .view-container {
     display: flex;
     height: calc(100vh - 70px);
@@ -369,14 +349,6 @@ thead #btn a {
     color: #aaa;
     text-transform: uppercase;
     margin-bottom: 10px;
-}
-
-.filter form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    padding: 10px;
 }
 
 .client-bcg {
