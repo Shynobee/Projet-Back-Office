@@ -14,7 +14,7 @@
                 <?php foreach($items as $key=>$item){ 
                         if($key=='context' || $key=='objectifs' || $key=='presentation' || $key=='output'){ ?>
                         <div class="view-detail-content">
-                        <span><?=$key?></span>
+                        <span class="spantitle"><?=$key?></span>
                         <p><?= $item ?></p>
                         </div>
                 <?php }} ?>
