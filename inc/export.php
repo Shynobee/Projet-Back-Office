@@ -1,9 +1,25 @@
 <?php
-require('../FPDF/fpdf.php');
-//var_dump($_GET['id']);
-$pdf = new FPDF();
-$pdf->AddPage();
-$pdf->SetFont('Arial', '', 18);
-$pdf->Cell(0, 10, "A demain les amis");
+session_start(); 
+require('mysqlconnect.php');
+$mdb = new db;
+require 'functions.php';
+require('../tfpdf/tfpdf.php');
+$client = filter(['id'=>$_GET['id'],],$_SESSION['client']);
+$pdf = new tFPDF();
+$pdf->AddPage('P','A4',0);
+$pdf->AddFont('DejaVu','','DejaVuSansCondensed.ttf',true);
+$pdf->SetFont('DejaVu', '', 18);
+$pdf->Cell(275, 30, $client[0]['client'],0,0);
+$pdf->Ln(25);
+$pdf->SetFont('DejaVu', '', 12);
+$pdf->MultiCell(0, 5, $client[0]['context']);
+$pdf->Ln(10);
+$pdf->SetFont('DejaVu', '', 12);
+$pdf->MultiCell(0, 5, $client[0]['objectifs']);
+$pdf->Ln(10);
+$pdf->SetFont('DejaVu', '', 12);
+$pdf->MultiCell(0, 5, $client[0]['presentation']);
+$pdf->Ln(10);
+$pdf->SetFont('DejaVu', '', 12);
+$pdf->MultiCell(0, 5, $client[0]['output']);
 $pdf->Output();
-?>

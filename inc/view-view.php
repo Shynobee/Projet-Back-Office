@@ -1,7 +1,5 @@
 <div class="exportpdf">
-        <form method='GET' action="export.php?id=<?=$_GET['id']?>" >
-                <button type="submit">PDF</button>
-        </form>
+        <a href="export.php?id=<?=$_GET['id']?>">Pdf</a>  
 </div>
                 
 <?php foreach($detail as $key=>$items){ ?>
