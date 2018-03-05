@@ -1,5 +1,3 @@
-
-
 <div class="view-main-section">
   
     <form action="add.php" method="POST" enctype="multipart/form-data">

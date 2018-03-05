@@ -1,4 +1,25 @@
+.sidebar {
+    display: none;
+}
 
-.aside{
+.navbar {
+    display: none;
+}
+
+.illustration img {
+    height: 100px;
+    width: 100px;
+}
+
+.view-detail-content span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.client-list #btn {
+    display: none;
+}
+
+.page {
     display: none;
 }
