@@ -16,7 +16,7 @@ if(!isset($_GET['page'])){
 <main>
     <div class="container">
         <aside class="sidebar">
-            <div class="background">    
+        <div id="particles-js">    
                 <header class="profile">
                     <i class="fa fa-user"></i>
                     <span><?=$_SESSION['newsession']?></span>
@@ -58,7 +58,8 @@ if(!isset($_GET['page'])){
     </div>
 </main>
 
-
+<script src="../js/particles.js"></script>
+<script src="../js/app.js"></script>
 
 
 
