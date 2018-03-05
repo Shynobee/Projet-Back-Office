@@ -4,7 +4,7 @@
     <i></i>
     </div>
     <div class="filter">
-        <select id="Published">
+        <select name="published">
             <option name='published' value="Published">Published</option>
             <option name='published' value="Not published">Not published</option>
             <option name='published' value="Draft">Draft</option>
