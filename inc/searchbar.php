@@ -1,6 +1,6 @@
-<form action="" method="post">
+<form action="reference.php?page=CLIENT LIST&num=0" method="post">
     <div class="search">
-    <input type="search" name="searchclient" placeholder="Client">
+    <input type="search" name="searchclient" placeholder="Client" value="<?= $_SESSION['search'] ?>"> 
     <i></i>
     
     </div>
