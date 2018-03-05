@@ -35,5 +35,4 @@ switch ($_GET['page']) {
     default:
         $_GET['page'] = 'HOME';
         break;
-
 }
