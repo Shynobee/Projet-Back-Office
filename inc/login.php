@@ -30,4 +30,10 @@ include('header.php');
     ?>
     <span class="error"><i class="fa fa-info"></i><?= $_GET['erreur']?></span>
         <?php endif; ?>
+    <!--<div id="particles-js"></div>-->
+
+<!-- scripts -->
+<script src="../js/particles.js"></script>
+<script src="../js/app.js"></script>
+
 </div>

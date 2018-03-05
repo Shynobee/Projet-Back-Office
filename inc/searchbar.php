@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <form action="" method="post">
     <div class="search">
@@ -14,3 +15,13 @@
     </div>
     <input type="submit" value="search">
 </form>
+=======
+<form action="" method="post">
+    <label for="client">Client</label>
+    <input type="checkbox" name="client" checked>
+    <label for="context">Context</label>
+    <input type="checkbox" name="context">
+    <input type="search" name="searchclient">
+    <input type="submit" value="Search">
+</form>
+>>>>>>> 5c77a878b1b051d9c2b9695f8fd998b0bef08644
