@@ -2,7 +2,6 @@
     <div class="search">
     <input type="search" name="searchclient" placeholder="Client" value="<?= $_SESSION['search'] ?>"> 
     <i></i>
-    
     </div>
     <div class="filter">
         <select id="Published">

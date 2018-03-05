@@ -18,12 +18,16 @@ switch ($_GET['page']) {
         break;
     case 'CLIENT LIST':
         $listpage = array();
+        $search = array();
         if(!empty($_POST['searchclient'])){
-        $search = [
-            'client'=>$_POST['searchclient'],
-            //'context'=>$_POST['searchclient'],
-            //'objectifs'=>$_POST['searchclient'],
-        ];
+        $search['client']=$_POST['searchclient'];}
+        if(!empty($_POST['published'])){
+        $search['status']=$_POST['published'];}
+        if(!empty($_POST['postedby'])){
+        $search['createdBY']=$_POST['postedby'];}
+        
+            
+        if(!empty($search)){
         $listpage1 = filter($search,$_SESSION['client'] );}
         else{
         $listpage1 = $_SESSION['client'];
