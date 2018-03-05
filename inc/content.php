@@ -20,8 +20,8 @@ switch ($_GET['page']) {
         $listpage = array();
         if(!empty($_POST['searchclient'])){
         $search = [
-            'client'=>$_POST['searchclient'],
-            //'context'=>$_POST['searchclient'],
+            //'client'=>$_POST['searchclient'],
+            'context'=>$_POST['searchclient'],
             //'objectifs'=>$_POST['searchclient'],
         ];
         $listpage1 = filter($search,$_SESSION['client'] );}
