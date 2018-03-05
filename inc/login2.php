@@ -1,5 +1,4 @@
 <style>
-
 .connect2{
     height:100vh;
     width:100vw;
@@ -17,8 +16,8 @@
     z-index: 3;
     padding: 30px;
     /*! background: linear-gradient(#3d89ff,#0f92b8); */
-    box-shadow: 0px 0px 2px 0px #fff;
-    background-color: #2996a8;
+    /*! box-shadow: 0px 0px 2px 0px #fff; */
+    /*! background-color: #2996a8; */
 }
 .btn-connect{
     width: 320px;
@@ -70,7 +69,6 @@
     opacity: 0.6;
     z-index: 2;
 }
-
 </style>
 <?php 
 include('header.php');
